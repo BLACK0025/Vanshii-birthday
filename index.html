@@ -420,7 +420,7 @@
 <div class="section-wrap" style="padding:0 0 5rem;max-width:100%">
   <div class="countdown-wrap">
     <p class="section-label">✦ the special day</p>
-    <h2 class="section-title">Counting down to Prachuu's birthday</h2>
+    <h2 class="section-title">Counting down to Vanshiiii's birthday</h2>
     <div id="countdown-display">
       <div class="cd-unit"><span class="cd-num" id="cd-d">--</span><span class="cd-label">Days</span></div>
       <div class="cd-sep">:</div>
@@ -482,24 +482,12 @@
   }, 600);
 
   /* TYPEWRITER */
-  const msg = "How it  all began…
-The day i met you 
-Some moments and plans are really unexpected… They are just like God plans everything.. Meeting you was one of those .. i remember thinking … kuch to baat h isme
-
-Us in long distance 
-
-What a start it was ….that our relationship started from long distance and its impact was such that , along with you, i also got attached to Dehradun 
-
-Falling deeper and deeper 
-Late night talks , fights , laughing, and specially missing - every little thing made me fall deeper in love . And that’s all i ever want for us 
-
-This birthday & beyond 
-Here we are , Celebrating your birthday for the first time in front of each other . Happy birthday my betuu my jaanu … Here’s to every beautiful chapter still to come - with me , obviousl ❤️";
+  const msg = "How it  all began…The day i met you Some moments and plans are really unexpected… They are just like God plans everything.. Meeting you was one of those .. i remember thinking … kuch to baat h ismeUs in long distance What a start it was ….that our relationship started from long distance and its impact was such that , along with you, i also got attached to Dehradun Falling deeper and deeper Late night talks , fights , laughing, and specially missing - every little thing made me fall deeper in love . And that’s all i ever want for us This birthday & beyond Here we are , Celebrating your birthday for the first time in front of each other . Happy birthday my betuu my jaanu … Here’s to every beautiful chapter still to come - with me , obviousl ❤️";
   let i = 0;
   (function type() { if(i<msg.length){ document.getElementById('message').innerHTML+=msg[i++]; setTimeout(type,36); } })();
 
   /* SLIDESHOW */
-  const slidePhotos = ['./slide1.jpeg','./slide2.jpeg','./slide3.jpeg','./slide4.jpeg'];
+  const slidePhotos = ['./slide1.jpg','./slide2.jpg','./slide3.jpg','./slide4.jpg'];
   let si = 0;
   setInterval(() => {
     si = (si+1) % slidePhotos.length;
@@ -510,10 +498,10 @@ Here we are , Celebrating your birthday for the first time in front of each othe
 
   /* GALLERY */
   [
-    { src: './mem1.jpeg', label: 'Us 💕' },
-    { src: './mem2.jpeg', label: 'My fav' },
-    { src: './mem3.jpeg', label: 'Together' },
-    { src: './mem4.jpeg', label: 'Always 🌸' },
+    { src: './mem1.jpg', label: 'Us 💕' },
+    { src: './mem2.jpg', label: 'My fav' },
+    { src: './mem3.jpg', label: 'Together' },
+    { src: './mem4.jpg', label: 'Always 🌸' },
   ].forEach(({ src, label }) => {
     const s = document.createElement('div'); s.className = 'photo-slot';
     const img = document.createElement('img');
