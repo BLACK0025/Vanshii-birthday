@@ -499,7 +499,7 @@ Here we are , Celebrating your birthday for the first time in front of each othe
   (function type() { if(i<msg.length){ document.getElementById('message').innerHTML+=msg[i++]; setTimeout(type,36); } })();
 
   /* SLIDESHOW */
-  const slidePhotos = ['./slide1.jpg','./slide2.jpg','./slide3.jpg','./slide4.jpg'];
+  const slidePhotos = ['./slide1.jpeg','./slide2.jpeg','./slide3.jpeg','./slide4.jpeg'];
   let si = 0;
   setInterval(() => {
     si = (si+1) % slidePhotos.length;
@@ -510,10 +510,10 @@ Here we are , Celebrating your birthday for the first time in front of each othe
 
   /* GALLERY */
   [
-    { src: './mem1.jpg', label: 'Us 💕' },
-    { src: './mem2.jpg', label: 'My fav' },
-    { src: './mem3.jpg', label: 'Together' },
-    { src: './mem4.JPG', label: 'Always 🌸' },
+    { src: './mem1.jpeg', label: 'Us 💕' },
+    { src: './mem2.jpeg', label: 'My fav' },
+    { src: './mem3.jpeg', label: 'Together' },
+    { src: './mem4.jpeg', label: 'Always 🌸' },
   ].forEach(({ src, label }) => {
     const s = document.createElement('div'); s.className = 'photo-slot';
     const img = document.createElement('img');
@@ -530,7 +530,7 @@ Here we are , Celebrating your birthday for the first time in front of each othe
   document.querySelectorAll('.timeline-item').forEach(el => obs.observe(el));
 
   /* COUNTDOWN — change this date! */
-  const bday = new Date('2025-05-10T00:00:00');
+  const bday = new Date('2025-05-27T00:00:00');
   function tick() {
     const now = new Date();
     let t = new Date(bday); t.setFullYear(now.getFullYear());
